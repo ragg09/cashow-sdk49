@@ -12,6 +12,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Ionicons } from '@expo/vector-icons';
+import ExpenseCategoryScreen from './src/screens/ExpenseCategoryScreen';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -25,6 +26,13 @@ const App = () => {
           component={DashboardScreen}
           options={{
             drawerIcon: ({ color, size }) => <Ionicons color={color} size={size} name="home" />,
+          }}
+        />
+        <Drawer.Screen
+          name="Expense Type"
+          component={ExpenseCategoryScreen}
+          options={{
+            drawerIcon: ({ color, size }) => <Ionicons color={color} size={size} name="options" />,
           }}
         />
         <Drawer.Screen
