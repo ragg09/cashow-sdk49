@@ -1,0 +1,16 @@
+{
+  "expense-type": [
+    {
+      "id": 1,
+      "title": "Needs"
+    },
+    {
+      "id": 2,
+      "title": "Wants"
+    },
+    {
+      "id": 3,
+      "title": "Savings"
+    }
+  ]
+}
