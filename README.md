@@ -25,6 +25,12 @@ Run Development (Metro Bundler)
 npm start
 ```
 
+Run JSON SERVET (API)
+
+```bash
+json-server --watch db.json --port 3001 --host <ip address>
+```
+
 ### Physical Phone
 
 - install expo app
